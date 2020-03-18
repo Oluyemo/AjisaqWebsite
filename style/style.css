@@ -1,0 +1,740 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #f8f8f8;
+    margin: 0;
+    padding:0;
+}
+
+.nav {
+   width: 100%;
+   position :fixed;
+    z-index: 8888888;
+    background-color: transparent;
+   
+}
+.nav ul{
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+.nav li {
+    padding: 30px;
+    font-size: 17px;
+    flex-basis: 8%;
+    font-family:   'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+ a{
+    text-decoration: none;
+    transform: all 0.8s;
+    color:#fff;
+}
+.toggle{
+    display: none;
+    cursor: pointer;
+}
+.nav a:hover{
+    color:rgb(12, 190, 235);
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height:100vh;
+  
+}
+.image{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    min-height: 100%;
+}
+.darkImage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+}
+.darkImage .text{
+    display: block;
+    position:relative;
+    color:white;
+    margin: 40vh 31vh 8vh 29vh;
+
+}
+.darkImage .text h1{
+    font-size: 58px;
+}
+.darkImage .text p{
+    font-size: 20px;
+    line-height: 28px;
+	color: #eee;
+	margin-right: 35%;
+}
+.darkImage .text .btn{
+    padding: 12px 20px;
+    border:2px solid white;
+    color:white;
+    border-radius: 25px;
+    background-color: rgb(11, 135, 167);
+    
+}
+.content1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background:;
+}
+.content1 div{
+
+}
+.container {
+  /* flex-basis: 4%; */
+}
+.con{
+    background: none ;
+    height: 550px;
+    width: 300px;
+    text-align: center;
+    margin:5px;
+    
+}
+.con h2{
+    color: rgb(11, 135, 167);
+}
+.con .avarter{
+    border:2px solid white;
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+    background-color:;
+    position: relative;
+    overflow: hidden;
+    left: 50px;
+
+}
+.con .avarter img{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.con p{
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    margin:15px;
+    text-align:justify;
+}
+.con .btn2{
+    padding: 12px 30px;
+    border:3px solid rgb(11, 135, 167);
+    color:rgb(11, 135, 167);
+    background-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer; 
+    font-weight: bold;   
+}
+.section{
+    position:relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+.section .image1 {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+.section .image1 img {
+    width: 100%;
+    min-height: 100%;
+}
+.section .darkImage2{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+.section .darkImage2 .text1{
+    color: white;
+    margin: 10vh 20vh 10vh 15vh;
+    display: block;
+}
+.section .darkImage2 .text1 h1{
+    font-size: 48px;
+    line-height: 32px;
+	color: #fff;
+    margin-right: 20%;
+    font-weight: bolder;
+}
+.section .darkImage2 .text1 p{
+    font-size: 20px;
+    line-height: 32px;
+	color: #fff;
+    margin-right: 25%;
+}
+.section .darkImage2 .text1 .span{
+    padding: 12px 20px;
+    color:white;;
+    background-color: rgb(11, 135, 167);
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute;
+    top:25vh;
+    right:75px;
+    font-size: 18px;
+}
+.wrap {
+    max-width: 1300px;
+    margin:auto;
+    font-family: serif;
+    overflow: hidden;
+    
+
+}
+.PriceTable{
+	float:left;
+	width: 33.3%;
+    padding:15px;
+      
+
+}
+.price{
+	list-style-type: none;
+	border:1px solid #fff;
+	margin:0;
+	padding: 0;
+    background: rgba(0,0,0,0.6);
+    font-family: serif;
+}
+.price:hover{
+	box-shadow:  0 8px 12px 0 rgba(0,0,0,0.8);
+}
+.price .header {
+	background: rgb(11, 135, 167);
+	color:white;
+    font-size: 25px;
+}
+.price li {
+	border-bottom: 1px solid rgb(11, 135, 167);
+	padding: 12px;
+    text-align: center;
+    background: #fff;
+    font-size: 17px;
+    color:rgb(44, 44, 44);
+}
+.price .pricebtn {
+background: rgb(252, 249, 249);
+font-size: 20px;
+color:rgb(121, 120, 120);
+font-weight: bold;
+text-align: center;
+}
+.btn {
+	padding:10px 25px;
+	text-decoration: none;
+    font-size: 16px; 
+    color:white;;
+    background-color: rgb(11, 135, 167);
+    transition: all 0.5s;
+    cursor: pointer;
+  
+}
+@media only screen and (max-width: 800px)
+{
+	.PriceTable {
+		width:100%;
+	}
+}
+.client{
+   text-align: center;
+   margin-top: 90px;
+   background: rgb(0,0,0,0.8);
+   color: white;
+   padding: 50px;
+   font-family: monospace;
+}
+.client p{
+    display:block;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+    line-height: 28px;
+}
+.client span{
+    padding:10px 25px;
+    font-size: 20px; 
+    color:white;;
+    background-color: rgb(11, 135, 167);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+  .section2{
+      position: relative;
+      width:100%;
+      height: 550px;
+  }
+  .section2 .imageholder{
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+
+  }
+  .section2 .imageholder img {
+      width: 100%;
+      min-height: 100%;
+  }
+  .section2  .darkImage3{
+     position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+  }
+  .contact{
+    display:flex;
+    align-items: flex-start;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+    color:rgb(236, 234, 234);
+    /* transition: all 12s ease-in-out; */
+    
+  } 
+/* 
+.contact:hover{
+transform:rotate(380deg)
+}  */
+.contact div{
+    border:2px solid transparent;
+    padding-left: 40px;
+    overflow: none;
+
+}
+.contact .Box1{
+    flex:1;
+    flex-basis: 20%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.contact .Box1 h1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /* padding-left: 40px; */
+}
+.contact .Box1 .socialbox{
+    margin-top: 20px;
+    border-radius: 3px;
+}
+.contact .Box1 .socialbox .fab{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.contact .Box1 .socialbox1{
+    display:block;
+    margin-top: 30px;
+}
+.contact .Box1 .socialbox1 .fa{
+    display:block;
+    padding:20px;
+    font-size: 20px;
+}
+.contact .Box1 .socialbox1 .fa span{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.contact .Box2{
+    flex:1;
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+.contact .Box2 h1{
+    text-align: center;
+}
+.contactform {
+    padding: 5px;
+    margin: 2px 0;
+    width:100%;
+    height:auto;
+    margin-left: 50px;   
+  
+  }
+  textarea {
+      width:653px;
+      border-radius: 5px;
+      outline: none;
+      border:none;
+      box-sizing: border-box;
+      height: 200px;
+      resize: none;
+      padding: 10px;
+      font-size: 18px;
+      color:rgb(90, 85, 85);
+  }
+  .inputt{
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    width:652px;
+    height:50px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+  }
+.input{
+    padding:10px 25px;
+    font-size: 18px; 
+    color:white;
+    background-color: rgb(11, 135, 167);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: monospace;
+    border:none;
+    margin-left: 69%;
+}
+.teamHolder{
+width:300px;
+height: auto;
+background: #fff;
+border-radius: 5px;
+margin-bottom: 30px;
+box-shadow: 0 10px 10px 10px rgba(115,193,255,0.1);
+padding:20px;
+position: relative;
+}
+.teamHolder img{
+    width:120px;
+    height: 120px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.teamHolder h4{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color:rgb(11, 135, 167)
+}
+.teamHolder small{
+    color:#555
+}
+.teamHolder .socialBox{
+    background: rgb(11, 135, 167);
+    margin:60px auto 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+.teamHolder .socialBox .fab{
+    color:white;
+    margin:5px;
+    cursor: pointer;
+}
+.teamHolder p{
+    text-align: justify;
+    line-height: 24px;
+    color:#555;
+}
+.team{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.teamHolder img:hover{
+    width:270px;
+    height: 330px;
+}
+
+
+.suscribe{
+    position:relative;
+    width: 100%;
+    height: 370px;
+    margin-top: 130px;
+}
+.suscribe .suscribeimage {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+.suscribe .suscribeimage img {
+    width: 100%;
+    min-height: 100%;
+}
+.suscribe .suscribedarkImage{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+}
+.suscribe .suscribedarkImage .suscribetext{
+    color: white;
+    margin-top: 10vh;
+    /* margin-left: 10vh; */
+    text-align: center;
+    transition: all 0.5s;
+   
+}
+
+.suscribedarkImage .suscribetext p{
+    font-size: 22px;
+    line-height: 32px;
+}
+.suscribedarkImage .suscribetext .form{
+  width: 400px;
+  height: 50px;
+  outline:none;
+  padding: 10px;
+  color:rgb(99, 96, 96);
+  box-sizing: border-box;
+  font-size: 15px;
+  border:none;
+  display: inline-block;
+  box-sizing: border-box;
+  
+  
+
+}
+.suscribedarkImage .suscribetext .form:focus{
+    background: rgb(11, 135, 167);
+    color: white;
+    font-size: 18px;
+}
+.suscribedarkImage .suscribetext .form::placeholder{
+    font-size: 15px;
+    background: transparent;
+    color:rgb(56, 52, 52);
+    box-sizing: border-box;
+
+}
+.suscribedarkImage .suscribetext .submit{
+    width: 100px;
+    height: 50px;
+    outline:none;
+    padding: 10px;
+    color:#fff;
+    box-sizing: border-box;
+    font-size: 15px;
+    border:none;
+    background-color: rgb(11, 135, 167);
+    cursor: pointer;
+}
+
+.mission{
+    width: 320px;
+    height:auto;
+    padding:10px;
+    background:;
+    position: relative;
+    margin: 25px;
+    text-align: center;
+    
+
+}
+.mission .fa{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10em;
+    background-color: rgb(11, 135, 167);
+    border-radius: 50%;
+    
+}
+.mission h1{
+    color: rgb(11, 135, 167);
+    margin: 20px;
+}
+.mission P{
+    margin:10px;
+    font-size: 22px;
+    color: #91918f;
+    text-align: center;
+    
+}
+.about{
+ margin:0px 60px 60px 60px;
+ display: flex;
+ flex-wrap: wrap;
+justify-content: center;
+ background-color: ;
+
+} 
+.sectionn {
+max-width: 100%;
+margin: 0 auto;
+padding: 0 9rem;
+background-color: #fff;
+}
+.sectionn .sectionnn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sectionn .sectionnn .sec{
+    display:inline-block;
+    margin:5vh 0vh 0vh 0vh ;
+    color:rgb(75, 73, 73);
+    text-align: left;
+    
+}
+.sectionn .sectionnn .sec h2{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.sectionn .sectionnn .sec .para1{
+    font-size: 18px;
+    margin-right: 10%;
+    line-height: 28px;
+    font-weight: lighter;
+}
+.sectionn .sectionnn .sec .ul{
+    list-style-type: circle;
+    font-size: 18px;
+    margin-right: 10%;
+    line-height: 28px;
+    font-weight: lighter;
+    margin: 20px;
+    padding: 2px;
+}
+
+.footer{
+    max-width: 100%;
+    margin:0 auto;
+    background:  #000000cc;
+    padding: 0 3rem;
+}
+.footer .footercontent{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: white;
+    padding:2rem ;
+    grid-gap: 20px;
+    text-align: left;
+}
+.footer .footercontent .foot {
+    /* text-align: left; */
+    
+}
+.footer .footercontent .foot h3{
+    color: rgb(11, 135, 167);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.footer .footercontent .foot p{
+    color:#fff;
+    font-size: 16px;
+}
+.footer .footercontent .socialbox{
+    font-size: 20px;
+}
+.footer .footercontent .socialbox .fab{
+    margin-left: 10px;
+}
+.footer .footercontent img{
+    margin-top: 6rem;
+    width: 200px;
+}
+  
+  
+.bg-modal {
+    background-color: rgb(11, 135, 167);
+    width:100vw;
+    height:100%;
+    position: fixed;
+    margin: 0px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 2s;
+    display: none;
+    
+  }
+  
+  .modal-contents {
+    height: auto;
+    width: 500px;
+    background-color: ;
+    text-align: center;
+    /* margin:70px auto; */
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 4px;
+   
+  }
+  .modal-contents .modalInner{
+ 
+  }
+  .modal-contents  .modalInner ul{
+    margin: 0;
+    padding: 0;
+}
+  .modal-contents  .modalInner ul li{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 24px;
+    /* text-transform: uppercase; */
+  }
+  .modal-contents  .modalInner ul li a {
+      color:#fff;
+      
+  }
+  .closeM {
+    position: absolute;
+    top: -55px;
+    right: 40px;
+    font-size: 52px;
+    color: red;
+    font-weight:bolder;
+    transform: rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+  } 
+  .hahaha{
+      color:green;
+  }
+
+ 
